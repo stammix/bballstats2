@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15G31" minimumToolsVersion="Automatic">
+    <entity name="Age" representedClassName=".Age" syncable="YES">
+        <attribute name="ageclass" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="federalstates" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FederalState" inverseName="ages" inverseEntity="FederalState" syncable="YES"/>
+        <relationship name="leagueclasses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Leagueclass" inverseName="ages" inverseEntity="Leagueclass" syncable="YES"/>
+    </entity>
+    <entity name="Coach" representedClassName=".Coach" syncable="YES">
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="letterC" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Country" representedClassName=".Country" syncable="YES">
+        <attribute name="countrysname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="federalstates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FederalState" inverseName="country" inverseEntity="FederalState" syncable="YES"/>
+    </entity>
+    <entity name="FederalState" representedClassName=".FederalState" syncable="YES">
+        <attribute name="statesname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Age" inverseName="federalstates" inverseEntity="Age" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="federalstates" inverseEntity="Country" syncable="YES"/>
+    </entity>
+    <entity name="League" representedClassName=".League" syncable="YES">
+        <attribute name="leaguesname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="leagueclasses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Leagueclass" inverseName="leagues" inverseEntity="Leagueclass" syncable="YES"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" inverseName="league" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Leagueclass" representedClassName=".Leagueclass" syncable="YES">
+        <attribute name="classes" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Age" inverseName="leagueclasses" inverseEntity="Age" syncable="YES"/>
+        <relationship name="leagues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="League" inverseName="leagueclasses" inverseEntity="League" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName=".Player" syncable="YES">
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stat" inverseName="players" inverseEntity="Stat" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="players" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Stat" representedClassName=".Stat" syncable="YES">
+        <attribute name="action" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minute" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="opponentplayersname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opponentplayersnumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="opponentsteam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playersname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playersnumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="team" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="players" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="stats" inverseEntity="Player" syncable="YES"/>
+    </entity>
+    <entity name="Team" representedClassName=".Team" syncable="YES">
+        <attribute name="teamsname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="league" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="League" inverseName="teams" inverseEntity="League" syncable="YES"/>
+        <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="team" inverseEntity="Player" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="League" positionX="-164" positionY="-126" width="128" height="88"/>
+        <element name="Team" positionX="16" positionY="-139" width="128" height="88"/>
+        <element name="Player" positionX="-11" positionY="18" width="128" height="133"/>
+        <element name="Stat" positionX="153" positionY="99" width="128" height="193"/>
+        <element name="Age" positionX="-504" positionY="-46" width="128" height="88"/>
+        <element name="Leagueclass" positionX="-342" positionY="-126" width="128" height="88"/>
+        <element name="FederalState" positionX="-360" positionY="72" width="128" height="88"/>
+        <element name="Country" positionX="-209" positionY="117" width="128" height="73"/>
+        <element name="Coach" positionX="-324" positionY="45" width="128" height="90"/>
+    </elements>
+</model>
