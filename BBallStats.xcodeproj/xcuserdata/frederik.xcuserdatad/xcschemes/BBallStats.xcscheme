@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "86DA03881D26C81D0041E52E"
-               BuildableName = "BBallStats.app"
-               BlueprintName = "BBallStats"
-               ReferencedContainer = "container:BBallStats.xcodeproj">
+               BlueprintIdentifier = "86DA03AA1D2B05740041E52E"
+               BuildableName = "BballStats.app"
+               BlueprintName = "BballStats"
+               ReferencedContainer = "container:BballStats.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "86DA03881D26C81D0041E52E"
-            BuildableName = "BBallStats.app"
-            BlueprintName = "BBallStats"
-            ReferencedContainer = "container:BBallStats.xcodeproj">
+            BlueprintIdentifier = "86DA03AA1D2B05740041E52E"
+            BuildableName = "BballStats.app"
+            BlueprintName = "BballStats"
+            ReferencedContainer = "container:BballStats.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "86DA03881D26C81D0041E52E"
-            BuildableName = "BBallStats.app"
-            BlueprintName = "BBallStats"
-            ReferencedContainer = "container:BBallStats.xcodeproj">
+            BlueprintIdentifier = "86DA03AA1D2B05740041E52E"
+            BuildableName = "BballStats.app"
+            BlueprintName = "BballStats"
+            ReferencedContainer = "container:BballStats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "86DA03881D26C81D0041E52E"
-            BuildableName = "BBallStats.app"
-            BlueprintName = "BBallStats"
-            ReferencedContainer = "container:BBallStats.xcodeproj">
+            BlueprintIdentifier = "86DA03AA1D2B05740041E52E"
+            BuildableName = "BballStats.app"
+            BlueprintName = "BballStats"
+            ReferencedContainer = "container:BballStats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

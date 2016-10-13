@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentScoreTeamOneLabel: UILabel!
     @IBOutlet weak var currentScoreTeamTwoLabel: UILabel!
     
-    @IBAction func twoMinutesBackPressed(sender: UIButton) {
+    @IBAction func twoMinutesBackPressed(_ sender: UIButton) {
         if currentMinute > 2 {
             currentMinute = currentMinute - 2
             currentMinuteMinusTwo = currentMinuteMinusTwo - 2
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func oneMinuteBackPressed(sender: UIButton) {
+    @IBAction func oneMinuteBackPressed(_ sender: UIButton) {
         if currentMinute > 1 {
             currentMinute = currentMinute - 1
             currentMinuteMinusTwo = currentMinuteMinusTwo - 1
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     }
     
 
-    @IBAction func nextMinutePressed(sender: UIButton) {
+    @IBAction func nextMinutePressed(_ sender: UIButton) {
         if currentMinute <= GameTime - 1 {
             currentMinute = currentMinute + 1
             currentMinuteMinusTwo = currentMinuteMinusTwo + 1
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func skipTwoMinutesPressed(sender: UIButton) {
+    @IBAction func skipTwoMinutesPressed(_ sender: UIButton) {
         if currentMinute <= GameTime - 2 {
             currentMinute = currentMinute + 2
             currentMinuteMinusTwo = currentMinuteMinusTwo + 2
@@ -104,55 +104,55 @@ class ViewController: UIViewController {
     }
     
     //actions
-    @IBAction func twoPointerPressed(sender: UIButton) {
+    @IBAction func twoPointerPressed(_ sender: UIButton) {
         print("2p")
         currentScoreTeamOne = currentScoreTeamOne + 2
         currentScoreTeamOneLabel.text = "\(currentScoreTeamOne)"
         
-        self.performSegueWithIdentifier("whatHappendToWhoMadeItSegue", sender: self)
+        self.performSegue(withIdentifier: "whatHappendToWhoMadeItSegue", sender: self)
     }
     
-    @IBAction func threePointsPressed(sender: UIButton) {
+    @IBAction func threePointsPressed(_ sender: UIButton) {
         print("3p")
         currentScoreTeamOne = currentScoreTeamOne + 3
         currentScoreTeamOneLabel.text = "\(currentScoreTeamOne)"
-        self.performSegueWithIdentifier("whatHappendToWhoMadeItSegue", sender: self)
+        self.performSegue(withIdentifier: "whatHappendToWhoMadeItSegue", sender: self)
     }
     
 
     
-    @IBAction func FTmadePressed(sender: UIButton) {
+    @IBAction func FTmadePressed(_ sender: UIButton) {
         print("FT made")
         currentScoreTeamOne = currentScoreTeamOne + 1
         currentScoreTeamOneLabel.text = "\(currentScoreTeamOne)"
-        self.performSegueWithIdentifier("whatHappendToWhoMadeItSegue", sender: self)
+        self.performSegue(withIdentifier: "whatHappendToWhoMadeItSegue", sender: self)
 
     }
     
-    @IBAction func FTmissedPressed(sender: UIButton) {
+    @IBAction func FTmissedPressed(_ sender: UIButton) {
         print("FT missed")
-        self.performSegueWithIdentifier("whatHappendToWhoMadeItSegue", sender: self)
+        self.performSegue(withIdentifier: "whatHappendToWhoMadeItSegue", sender: self)
 
     }
     
-    @IBAction func FoulPressed(sender: UIButton) {
+    @IBAction func FoulPressed(_ sender: UIButton) {
         print("Foul")
-        self.performSegueWithIdentifier("whatHappendToWhoMadeItSegue", sender: self)
+        self.performSegue(withIdentifier: "whatHappendToWhoMadeItSegue", sender: self)
     }
     
-    @IBAction func TOPressed(sender: UIButton) {
+    @IBAction func TOPressed(_ sender: UIButton) {
         print("TurnOver")
-        self.performSegueWithIdentifier("whatHappendToWhoMadeItSegue", sender: self)
+        self.performSegue(withIdentifier: "whatHappendToWhoMadeItSegue", sender: self)
 }
     
-    @IBAction func StealPressed(sender: UIButton) {
+    @IBAction func StealPressed(_ sender: UIButton) {
         print("Steal")
-        self.performSegueWithIdentifier("whatHappendToWhoMadeItSegue", sender: self)
+        self.performSegue(withIdentifier: "whatHappendToWhoMadeItSegue", sender: self)
 
     }
-    @IBAction func TimeOutPressed(sender: UIButton) {
+    @IBAction func TimeOutPressed(_ sender: UIButton) {
         print("TimeOut")
-        self.performSegueWithIdentifier("whatHappendToWhoMadeItSegue", sender: self)
+        self.performSegue(withIdentifier: "whatHappendToWhoMadeItSegue", sender: self)
 
     }
    

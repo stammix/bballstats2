@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BBallStats.xcscheme</key>
+		<key>BballStats.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>86DA03881D26C81D0041E52E</key>
+		<key>86DA03AA1D2B05740041E52E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
