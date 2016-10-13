@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WhatHappendViewController.swift
 //  BballStats
 //
 //  Created by Fred Erik on 04.07.16.
@@ -17,7 +17,7 @@ var currentMinutePlusTwo = 3
 var GameTime = 10
 var currentScoreTeamOne = 0
 var currentScoreTeamTwo = 0
-class ViewController: UIViewController {
+class WhatHappendViewController: UIViewController {
     
     //GameTime
     @IBOutlet weak var twoMinutesBackLabel: UILabel!
@@ -39,6 +39,7 @@ class ViewController: UIViewController {
             currentMinutePlusOne = currentMinutePlusOne - 2
             currentMinutePlusTwo = currentMinutePlusTwo - 2
             updateLabels()
+            
         }
     }
     
