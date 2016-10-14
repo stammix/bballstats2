@@ -29,6 +29,7 @@ class WhatHappendViewController: UIViewController {
     @IBOutlet weak var plusTwoMinutesLabel: UILabel!
     
     @IBOutlet weak var currentScoreTeamOneLabel: UILabel!
+    
     @IBOutlet weak var currentScoreTeamTwoLabel: UILabel!
     
     @IBAction func twoMinutesBackPressed(_ sender: UIButton) {
@@ -63,7 +64,7 @@ class WhatHappendViewController: UIViewController {
             currentMinuteMinusOne = currentMinuteMinusOne + 1
             currentMinutePlusOne = currentMinutePlusOne + 1
             currentMinutePlusTwo = currentMinutePlusTwo + 1
-        updateLabels()
+            updateLabels()
         }
     }
     
@@ -102,6 +103,8 @@ class WhatHappendViewController: UIViewController {
             self.plusTwoMinutesLabel.text = ""
         }
         print("Minute \(currentMinute)")
+  //  (UIApplication.shared as! AppDelegate).
+        
     }
     
     //actions
