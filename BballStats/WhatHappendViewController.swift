@@ -103,7 +103,9 @@ class WhatHappendViewController: UIViewController {
             self.plusTwoMinutesLabel.text = ""
         }
         print("Minute \(currentMinute)")
-  //  (UIApplication.shared as! AppDelegate).
+  
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.perst
         
     }
     
