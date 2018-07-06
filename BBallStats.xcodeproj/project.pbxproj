@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860B6C6920EFE48100D068D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860B6C6820EFE48100D068D6 /* Main.storyboard */; };
 		864436611DB00BE100C7C6D8 /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8644364F1DB00BE100C7C6D8 /* Age.swift */; };
 		864436621DB00BE100C7C6D8 /* Age+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864436501DB00BE100C7C6D8 /* Age+CoreDataProperties.swift */; };
 		864436631DB00BE100C7C6D8 /* Coach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864436511DB00BE100C7C6D8 /* Coach.swift */; };
@@ -29,7 +30,6 @@
 		868044701D6949F00027E0A9 /* BballStats Trikot-schwarz.png in Resources */ = {isa = PBXBuildFile; fileRef = 8680446F1D6949F00027E0A9 /* BballStats Trikot-schwarz.png */; };
 		86DA03AF1D2B05740041E52E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DA03AE1D2B05740041E52E /* AppDelegate.swift */; };
 		86DA03B11D2B05740041E52E /* WhatHappendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DA03B01D2B05740041E52E /* WhatHappendViewController.swift */; };
-		86DA03B41D2B05740041E52E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DA03B21D2B05740041E52E /* Main.storyboard */; };
 		86DA03B71D2B05740041E52E /* BballStats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86DA03B51D2B05740041E52E /* BballStats.xcdatamodeld */; };
 		86DA03B91D2B05740041E52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DA03B81D2B05740041E52E /* Assets.xcassets */; };
 		86DA03BC1D2B05740041E52E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DA03BA1D2B05740041E52E /* LaunchScreen.storyboard */; };
@@ -38,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		860B6C6820EFE48100D068D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8644364F1DB00BE100C7C6D8 /* Age.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Age.swift; path = StatClasses/Age.swift; sourceTree = "<group>"; };
 		864436501DB00BE100C7C6D8 /* Age+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Age+CoreDataProperties.swift"; path = "StatClasses/Age+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		864436511DB00BE100C7C6D8 /* Coach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coach.swift; path = StatClasses/Coach.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		86DA03AB1D2B05740041E52E /* BballStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BballStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DA03AE1D2B05740041E52E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86DA03B01D2B05740041E52E /* WhatHappendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatHappendViewController.swift; sourceTree = "<group>"; };
-		86DA03B31D2B05740041E52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86DA03B61D2B05740041E52E /* BballStats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BballStats.xcdatamodel; sourceTree = "<group>"; };
 		86DA03B81D2B05740041E52E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86DA03BB1D2B05740041E52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 				86DA03B01D2B05740041E52E /* WhatHappendViewController.swift */,
 				86E56A221D3AE53E006A8AB7 /* WhoMadeItViewController.swift */,
 				86E56A261D3BD96A006A8AB7 /* SubstitutionT1ViewController.swift */,
-				86DA03B21D2B05740041E52E /* Main.storyboard */,
+				860B6C6820EFE48100D068D6 /* Main.storyboard */,
 				86DA03B81D2B05740041E52E /* Assets.xcassets */,
 				86DA03BA1D2B05740041E52E /* LaunchScreen.storyboard */,
 				86DA03BD1D2B05740041E52E /* Info.plist */,
@@ -203,8 +203,8 @@
 				8680446E1D6947CC0027E0A9 /* BballStats Trikot-weiß2.png in Resources */,
 				868044701D6949F00027E0A9 /* BballStats Trikot-schwarz.png in Resources */,
 				86DA03BC1D2B05740041E52E /* LaunchScreen.storyboard in Resources */,
+				860B6C6920EFE48100D068D6 /* Main.storyboard in Resources */,
 				86DA03B91D2B05740041E52E /* Assets.xcassets in Resources */,
-				86DA03B41D2B05740041E52E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +244,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		86DA03B21D2B05740041E52E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				86DA03B31D2B05740041E52E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		86DA03BA1D2B05740041E52E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
