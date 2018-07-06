@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0940"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,7 +17,7 @@
                BlueprintIdentifier = "86DA03AA1D2B05740041E52E"
                BuildableName = "BballStats.app"
                BlueprintName = "BballStats"
-               ReferencedContainer = "container:BballStats.xcodeproj">
+               ReferencedContainer = "container:BBallStats.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "86DA03AA1D2B05740041E52E"
             BuildableName = "BballStats.app"
             BlueprintName = "BballStats"
-            ReferencedContainer = "container:BballStats.xcodeproj">
+            ReferencedContainer = "container:BBallStats.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "86DA03AA1D2B05740041E52E"
             BuildableName = "BballStats.app"
             BlueprintName = "BballStats"
-            ReferencedContainer = "container:BballStats.xcodeproj">
+            ReferencedContainer = "container:BBallStats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "86DA03AA1D2B05740041E52E"
             BuildableName = "BballStats.app"
             BlueprintName = "BballStats"
-            ReferencedContainer = "container:BballStats.xcodeproj">
+            ReferencedContainer = "container:BBallStats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

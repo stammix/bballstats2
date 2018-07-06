@@ -105,7 +105,7 @@ class WhatHappendViewController: UIViewController {
         print("Minute \(currentMinute)")
   
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.perst
+        let context = appDelegate
         
     }
     
